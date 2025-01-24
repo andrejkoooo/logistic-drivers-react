@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+img:hover{
+    cursor: pointer;
+}
