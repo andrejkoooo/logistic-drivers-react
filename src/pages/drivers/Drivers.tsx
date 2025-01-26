@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import {fetchDrivers} from "../../store/reducers/driversReducer.ts";
 
 import './Drivers.css';
-import Driver from "./Driver.tsx";
+import Driver from "../../components/driver/Driver.tsx";
 
 
 const Drivers = () => {
