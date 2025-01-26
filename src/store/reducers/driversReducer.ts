@@ -39,15 +39,15 @@ const driverSlice = createSlice({
 
 export const getDrivers=(state: RootState) => state.drivers;
 
-const mapToTableDriver =(driver: IDriver): ITableDriver =>{
+const mapToTableDriver =(driver: IDriver): ITableDriver => {
     return {
         driverID: driver.driverID,
         name: driver.forename + ' ' + driver.surname,
         vehicleRegistration: driver.vehicleRegistration,
-        totalDuration: driver.traces?  calculateTotalActivityTime(driver.traces): 0,
+        totalDuration: driver.traces ? calculateTotalActivityTime(driver.traces) : 0,
         activityDays: getActivityDays(driver.traces),
         activityTypes: getGroupActivities(driver.traces)
     } as ITableDriver;
-}
+};
 
 export default driverSlice.reducer;
